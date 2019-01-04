@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CalcuRadioButton</string>
+    <string name="txt_first_value_string">Ingrese el primer valor</string>
+    <string name="txt_second_value_string">Ingrese el segundo valor</string>
+    <string name="btn1_calculate_string">Calcular</string>
+    <string name="txt_result_string">Resultado</string>
+    <string name="txt_add_string">Sumar</string>
+    <string name="txt_subtract_string">Restar</string>
+</resources>
