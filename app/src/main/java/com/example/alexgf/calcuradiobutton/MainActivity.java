@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             resultado = String.valueOf(result);
         }else if (rb4.isChecked() == true){     //comprueba si esta seleccionado la división
             if(num2 == 0) {
-                resultado = "No existe";
+                Toast.makeText(this, "No se puede divir entre 0", Toast.LENGTH_LONG).show();
             }else{
                 result = num1 / num2;
                 resultado = String.valueOf(result);
