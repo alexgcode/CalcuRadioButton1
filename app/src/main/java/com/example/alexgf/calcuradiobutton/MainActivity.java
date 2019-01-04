@@ -30,8 +30,21 @@ public class MainActivity extends AppCompatActivity {
         String value1 = et1.getText().toString();   //extrae los textos de los objetos de la vista
         String value2 = et2.getText().toString();
 
-        int num1 = Integer.parseInt(value1);    //convierte los textos en valores numericos
-        int num2 = Integer.parseInt(value2);
+        int num1  = 0;
+        int num2  = 0;
+        try
+        {
+            if(value1 != null && value2 != null) {
+                num1 = Integer.parseInt(value1);    //convierte los textos en valores numericos
+                num2 = Integer.parseInt(value2);
+            }
+        }
+        catch (NumberFormatException e)
+        {
+            num1 = 0;
+            num2 = 0;
+        }
+
 
         int result = -1;
         String resultado = "";
@@ -39,14 +52,16 @@ public class MainActivity extends AppCompatActivity {
         if(rb1.isChecked()==true){  //comprueba si esta seleccionado la suma
             result = num1 + num2;
             resultado = String.valueOf(result);
-            tv1.setText(resultado);
+
         }else if(rb2.isChecked()==true){    //comprueba si esta seleccionado la resta
             result = num1 - num2;
             resultado = String.valueOf(result);
-            tv1.setText(resultado);
-        }else{
-            //tv1.setText("Porfavor seleccione una opción");
+
+        }else {
+            resultado = "Porfavor seleccione una operación";
         }
+
+        tv1.setText(resultado);
 
     }
 
