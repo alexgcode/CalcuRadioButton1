@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         String value2 = et2.getText().toString();
 
         int num1 = Integer.parseInt(value1);    //convierte los textos en valores numericos
-        int num2 = Integer.parseInt(value1);
+        int num2 = Integer.parseInt(value2);
 
         int result = -1;
 
