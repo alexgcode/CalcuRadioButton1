@@ -62,9 +62,13 @@ public class MainActivity extends AppCompatActivity {
         }else if (rb3.isChecked() == true){     //comprueba si esta seleccionado la multiplicación
             result = num1 * num2;
             resultado = String.valueOf(result);
-        }else if (rb4.isChecked() == true){
-            result = num1 / num2;
-            resultado = String.valueOf(result);
+        }else if (rb4.isChecked() == true){     //comprueba si esta seleccionado la división
+            if(num2 == 0) {
+                resultado = "No existe";
+            }else{
+                result = num1 / num2;
+                resultado = String.valueOf(result);
+            }
         }else {
             resultado = "Porfavor seleccione una operación";
         }
