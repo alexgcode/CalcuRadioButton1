@@ -6,4 +6,6 @@
     <string name="txt_result_string">Resultado</string>
     <string name="txt_add_string">Sumar</string>
     <string name="txt_subtract_string">Restar</string>
+    <string name="txt_divide_string">Dividir</string>
+    <string name="txt_multiply_string">Multiplicar</string>
 </resources>

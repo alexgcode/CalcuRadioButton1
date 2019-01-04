@@ -59,6 +59,22 @@
             android:layout_weight="1"
             android:text="@string/txt_subtract_string"
             android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rbt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt_multiply_string"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rbt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt_divide_string"
+            android:textSize="24sp" />
     </RadioGroup>
 
     <Button

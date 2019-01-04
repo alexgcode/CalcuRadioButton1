@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText et1, et2;  //Declaracion de variables
     private TextView tv1;
-    private RadioButton rb1, rb2;
+    private RadioButton rb1, rb2, rb3, rb4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         tv1 = (TextView) findViewById(R.id.txt_result); //importa objetos de la vista
         rb1 = (RadioButton)findViewById(R.id.rbt1);
         rb2 = (RadioButton)findViewById(R.id.rbt2);
+        rb3 = (RadioButton)findViewById(R.id.rbt3);
+        rb4 = (RadioButton)findViewById(R.id.rbt4);
     }
 
     public void calculate(View view) {
@@ -57,9 +59,16 @@ public class MainActivity extends AppCompatActivity {
             result = num1 - num2;
             resultado = String.valueOf(result);
 
+        }else if (rb3.isChecked() == true){     //comprueba si esta seleccionado la multiplicación
+            result = num1 * num2;
+            resultado = String.valueOf(result);
+        }else if (rb4.isChecked() == true){
+            result = num1 / num2;
+            resultado = String.valueOf(result);
         }else {
             resultado = "Porfavor seleccione una operación";
         }
+
 
         tv1.setText(resultado);
 
