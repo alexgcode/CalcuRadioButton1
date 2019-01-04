@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         }
         catch (NumberFormatException e)
         {
-            num1 = 0;
+            num1 = 0;   //asegura que los numeros siempre tengan valores numericos asi no haya nada en los view
             num2 = 0;
         }
 
