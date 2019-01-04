@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         rb2 = (RadioButton)findViewById(R.id.rbt2);
     }
 
-    public void calculate(View view){
+    public void calculate(View view) {
         String value1 = et1.getText().toString();   //extrae los textos de los objetos de la vista
         String value2 = et2.getText().toString();
 
@@ -34,18 +34,20 @@ public class MainActivity extends AppCompatActivity {
         int num2 = Integer.parseInt(value2);
 
         int result = -1;
+        String resultado = "";
 
         if(rb1.isChecked()==true){  //comprueba si esta seleccionado la suma
             result = num1 + num2;
+            resultado = String.valueOf(result);
+            tv1.setText(resultado);
         }else if(rb2.isChecked()==true){    //comprueba si esta seleccionado la resta
             result = num1 - num2;
+            resultado = String.valueOf(result);
+            tv1.setText(resultado);
         }else{
-            tv1.setText("Porfavor seleccione una opción");
+            //tv1.setText("Porfavor seleccione una opción");
         }
 
-        String resultado = String.valueOf(result);
-
-        tv1.setText(resultado);
     }
 
 }
