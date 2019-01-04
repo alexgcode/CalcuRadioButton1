@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         int num2  = 0;
         try
         {
-            if(value1 != null && value2 != null) {
+            if(value1 != null && value2 != null) {  //verifica que los valores de las vistas no sean nulos
                 num1 = Integer.parseInt(value1);    //convierte los textos en valores numericos
                 num2 = Integer.parseInt(value2);
             }
