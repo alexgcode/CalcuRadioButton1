@@ -43,7 +43,9 @@ public class MainActivity extends AppCompatActivity {
             tv1.setText("Porfavor seleccione una opción");
         }
 
-        tv1.setText(result);
+        String resultado = String.valueOf(result);
+
+        tv1.setText(resultado);
     }
 
 }
